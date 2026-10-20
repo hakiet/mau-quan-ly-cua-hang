@@ -17,6 +17,8 @@ Không cần phần mềm, không cần đăng nhập, không tính phí. Mọi 
 | `mau/bien-ban-ban-giao-tien.md` | Ghi lại việc bàn giao tiền giữa hai ca |
 | `cong-cu/tinh-quy-tien.mjs` | Script Node.js tính quỹ tiền mặt, không cần cài thêm gì |
 
+Bản web của bộ mẫu này (mở trên điện thoại được, có nút in): [hakiet.github.io/mau-quan-ly-cua-hang](https://hakiet.github.io/mau-quan-ly-cua-hang/).
+
 ## Dùng nhanh
 
 ```bash

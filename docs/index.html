@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mẫu quản lý cửa hàng nhỏ — checklist mở ca, đóng ca, quỹ tiền mặt</title>
+<meta name="description" content="Bộ mẫu miễn phí cho cửa hàng nhỏ: checklist mở ca, đóng ca, tính quỹ tiền mặt, kiểm kê kho, theo dõi hàng bán chạy, đối chiếu công nợ. In ra dùng ngay, không cần phần mềm.">
+<style>
+  :root{--ink:#1c1917;--muted:#57534e;--line:#d6d3d1;--bg:#faf9f7;--accent:#9a3412}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:780px;margin:0 auto;padding:48px 20px 80px}
+  h1{font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.2;margin:0 0 12px}
+  h2{font-size:1.3rem;margin:44px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+  h3{font-size:1.05rem;margin:22px 0 8px}
+  p,li{color:var(--ink)}
+  .lead{font-size:1.08rem;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.94rem}
+  th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+  th{background:#f0ede9;font-weight:600}
+  ul.ck{list-style:none;padding-left:0}
+  ul.ck li{padding-left:1.7em;position:relative;margin:5px 0}
+  ul.ck li::before{content:"☐";position:absolute;left:0;color:var(--accent);font-size:1.05em}
+  code{background:#efebe6;padding:1px 5px;border-radius:4px;font-size:.9em}
+  pre{background:#efebe6;padding:12px 14px;border-radius:6px;overflow-x:auto;font-size:.86rem}
+  a{color:var(--accent)}
+  .box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:18px 0}
+  .toc{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px}
+  .toc ol{margin:6px 0;padding-left:1.3em}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  @media print{body{background:#fff;font-size:12pt}.toc{display:none}a{color:inherit}main{padding:0}}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Mẫu quản lý cửa hàng nhỏ</h1>
+<p class="lead">Checklist mở ca, đóng ca, quỹ tiền mặt, kiểm kê kho, theo dõi hàng bán chạy, đối chiếu công nợ. In ra điền bằng bút, hoặc copy sang Google Sheets. Miễn phí, không cần đăng nhập, không cần phần mềm.</p>
+
+<div class="toc">
+<strong>Trong trang này</strong>
+<ol>
+<li><a href="#mo-ca">Checklist mở ca</a></li>
+<li><a href="#dong-ca">Checklist đóng ca</a></li>
+<li><a href="#quy-tien">Quỹ tiền mặt theo ca</a></li>
+<li><a href="#kiem-ke">Phiếu kiểm kê kho</a></li>
+<li><a href="#hang-hoa">Theo dõi hàng bán chạy, bán chậm</a></li>
+<li><a href="#cong-no">Đối chiếu công nợ nhà cung cấp</a></li>
+<li><a href="#ban-giao">Biên bản bàn giao tiền</a></li>
+<li><a href="#nguyen-tac">Vài nguyên tắc dùng được ở mọi cửa hàng</a></li>
+</ol>
+</div>
+
+<h2 id="mo-ca">1. Checklist mở ca</h2>
+<p>Ngày: ___/___/______ · Người mở ca: ______________________</p>
+
+<h3>Trước khi khách vào cửa</h3>
+<ul class="ck">
+<li>Cửa hàng đã lau quầy, kệ hàng không lộn xộn</li>
+<li>Hàng bán chạy đã lên kệ, không để trống mặt hàng chủ lực</li>
+<li>Giá niêm yết đúng, không còn giá cũ</li>
+<li>Túi đựng, túi nilon, mã vạch dán sẵn</li>
+<li>Máy tính mở lên, kết nối đúng mạng cửa hàng</li>
+<li>Máy in hóa đơn có giấy, cắt giấy chạy thử một lần</li>
+</ul>
+
+<h3>Kiểm tiền đầu ca</h3>
+<ul class="ck">
+<li>Đếm tiền theo mệnh giá, từ lớn xuống nhỏ</li>
+<li>Ghi số tiền vào phần mềm trước khi bán</li>
+<li>Đếm lần thứ hai cùng một người, khác người đếm lần đầu nếu được</li>
+<li>Số dư đầu ca ghi vào sổ bàn giao: ______________ đ</li>
+</ul>
+
+<table>
+<tr><th>Mệnh giá</th><th>Số tờ</th><th>Thành tiền</th></tr>
+<tr><td>500.000</td><td></td><td></td></tr>
+<tr><td>200.000</td><td></td><td></td></tr>
+<tr><td>100.000</td><td></td><td></td></tr>
+<tr><td>50.000</td><td></td><td></td></tr>
+<tr><td>20.000</td><td></td><td></td></tr>
+<tr><td>10.000</td><td></td><td></td></tr>
+<tr><td>5.000</td><td></td><td></td></tr>
+<tr><th>Tổng</th><td></td><td></td></tr>
+</table>
+
+<p>Chỉ bắt đầu bán sau khi ca trước bàn giao xong và người nhận đã ký. Chữ ký: ____________________ · Giờ: ___:___</p>
+
+<h2 id="dong-ca">2. Checklist đóng ca</h2>
+<p>Ngày: ___/___/______ · Người đóng ca: ______________________</p>
+
+<h3>Dừng bán trước</h3>
+<ul class="ck">
+<li>Không nhận thêm đơn hàng nữa</li>
+<li>Hoàn tất món khách đang đợi</li>
+<li>Máy tính vẫn mở, chưa tắt ứng dụng</li>
+</ul>
+
+<h3>Đếm tiền cuối ca</h3>
+<ul class="ck">
+<li>Dừng bán xong mới đếm, đếm tại quầy chứ không đếm sau khi khóa cửa</li>
+<li>Đếm theo mệnh giá, từ lớn xuống nhỏ</li>
+<li>Hai người cùng kiểm, một người đếm một người ghi</li>
+<li>Quay video đếm nếu cửa hàng chỉ có một nhân viên</li>
+</ul>
+
+<h3>Đối chiếu</h3>
+<table>
+<tr><th>Chỉ số</th><th>Số tiền</th></tr>
+<tr><td>Tổng tiền két</td><td></td></tr>
+<tr><td>Số dư cuối ca trên phần mềm</td><td></td></tr>
+<tr><td>Chênh lệch (két − phần mềm)</td><td></td></tr>
+</table>
+<p>Lệch dưới 50.000 đ: xử lý ngay tại quầy, ghi vào biên bản. Lệch lớn hơn: đếm lại toàn bộ lần hai rồi mở từng hóa đơn trong ngày đối chiếu.</p>
+
+<h3>Các khoản thu ngoài két</h3>
+<ul class="ck">
+<li>Tiền gửi xe: ______________ đ</li>
+<li>Bán thêm món lẻ ngoài quầy: ______________ đ</li>
+<li>Khoản khác: ______________ đ</li>
+</ul>
+
+<h3>Tiền thừa cuối ngày</h3>
+<ul class="ck">
+<li>Rút về mức quỹ chuẩn của ca sáng hôm sau</li>
+<li>Phần dư cất két an toàn hoặc gửi ngân hàng</li>
+<li>Ghi rõ số tiền rút ra vào sổ bàn giao: ______________ đ</li>
+</ul>
+
+<h2 id="quy-tien">3. Quỹ tiền mặt theo ca</h2>
+<p>Bảng này để tính số tiền cần có trong két đầu ca. Giữ ít quá thì thiếu tiền thối, giữ nhiều quá thì chôn vốn và đếm mệt.</p>
+
+<h3>Bước 1: Ước doanh thu một ca</h3>
+<table>
+<tr><th>Ngày</th><th>Doanh thu thực tế</th><th>Ghi chú</th></tr>
+<tr><td>Thứ 2</td><td></td><td></td></tr>
+<tr><td>Thứ 3</td><td></td><td></td></tr>
+<tr><td>Thứ 4</td><td></td><td></td></tr>
+<tr><td>Thứ 5</td><td></td><td></td></tr>
+<tr><td>Thứ 6</td><td></td><td></td></tr>
+<tr><td>Thứ 7</td><td></td><td></td></tr>
+<tr><td>Chủ nhật</td><td></td><td></td></tr>
+<tr><th>Trung bình</th><td></td><td></td></tr>
+</table>
+<p>Lấy trung bình của tuần trước làm mốc. Ngày nào đông gấp đôi thì tính riêng, đừng lấy một mức cho cả tuần.</p>
+
+<h3>Bước 2: Tính tiền thối cần có</h3>
+<p>Công thức: <strong>doanh thu ca ÷ tỷ lệ thối</strong>. Tỷ lệ thối là số đồng bán ra trên mỗi đồng tiền thối cần có. Cửa hàng bán lẻ nhỏ thường rơi vào khoảng 1:3 đến 1:5. Muốn biết tỷ lệ của mình thì lấy một ca bình thường ra đếm: đầu ca có bao nhiêu tiền, cuối ca còn bao nhiêu tiền lẻ.</p>
+
+<table>
+<tr><th>Chỉ số</th><th>Số của cửa hàng bạn</th></tr>
+<tr><td>Doanh thu ca trung bình</td><td></td></tr>
+<tr><td>Tỷ lệ thối (1:___)</td><td></td></tr>
+<tr><td>Tiền thối cần có</td><td></td></tr>
+<tr><td>Dự phòng 20%</td><td></td></tr>
+<tr><th>Tổng cần trong két</th><td></td></tr>
+</table>
+
+<h3>Bước 3: Chia theo mệnh giá</h3>
+<table>
+<tr><th>Mệnh giá</th><th>Số tờ tối thiểu</th><th>Thành tiền</th></tr>
+<tr><td>500.000</td><td>2</td><td></td></tr>
+<tr><td>200.000</td><td>3</td><td></td></tr>
+<tr><td>100.000</td><td>5</td><td></td></tr>
+<tr><td>50.000</td><td>20</td><td></td></tr>
+<tr><td>20.000</td><td>30</td><td></td></tr>
+<tr><td>10.000</td><td>40</td><td></td></tr>
+<tr><td>5.000</td><td>20</td><td></td></tr>
+<tr><th>Tổng</th><td></td><td></td></tr>
+</table>
+<p>Mệnh giá cần nhiều nhất là 10.000, 20.000 và 50.000, vì khách hay đưa tờ 500.000 và 200.000.</p>
+
+<h3>Bước 4: Kiểm lại mỗi quý</h3>
+<p>Doanh thu thay đổi thì mức quỹ cũng phải chỉnh. Mỗi quý lấy một tuần ra đếm lại, so với bảng cũ, sửa chỗ lệch.</p>
+<table>
+<tr><th>Quý</th><th>Tổng quỹ chuẩn</th><th>Doanh thu ca TB</th><th>Ngày chỉnh</th></tr>
+<tr><td>Quý 1</td><td></td><td></td><td></td></tr>
+<tr><td>Quý 2</td><td></td><td></td><td></td></tr>
+<tr><td>Quý 3</td><td></td><td></td><td></td></tr>
+<tr><td>Quý 4</td><td></td><td></td><td></td></tr>
+</table>
+
+<div class="box">
+<strong>Tính nhanh bằng máy</strong>
+<pre>node cong-cu/tinh-quy-tien.mjs --doanh-thu 8000000 --ti-le-thoi 3 --muc-chuan 2500000</pre>
+<p style="margin-bottom:0">Script nằm trong repo, chạy bằng Node.js 18 trở lên, không cài thêm gì.</p>
+</div>
+
+<h2 id="kiem-ke">4. Phiếu kiểm kê kho</h2>
+<p>Đợt kiểm kê: ______________ · Ngày: ___/___/______ · Người kiểm: ______________________</p>
+
+<h3>Trước khi đếm</h3>
+<ul class="ck">
+<li>Kho đã sắp xếp, hàng cùng loại để cùng chỗ</li>
+<li>Không có khách đang lấy hàng trong lúc đếm</li>
+<li>Phiếu nhập, phiếu xuất trong ngày đã ghi xong</li>
+<li>Có sẵn sổ kho hoặc phần mềm để đối chiếu</li>
+</ul>
+<p>Đếm thực tế trước, không nhìn sổ. Nhìn sổ trước thì dễ đếm theo sổ chứ không đếm theo hàng.</p>
+
+<table>
+<tr><th>Mã hàng</th><th>Tên hàng</th><th>Đơn vị</th><th>Sổ sách</th><th>Thực tế</th><th>Lệch</th><th>Ghi chú</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<h3>Xử lý chênh lệch</h3>
+<table>
+<tr><th>Mức lệch</th><th>Cách xử lý</th></tr>
+<tr><td>Dưới 2%</td><td>Ghi vào sổ, chỉnh số tồn, không cần báo</td></tr>
+<tr><td>2% đến 5%</td><td>Ghi vào sổ, tìm xem có món nào bị bỏ sót</td></tr>
+<tr><td>Trên 5%</td><td>Dừng lại, đếm lại lần hai, mở phiếu nhập xuất ra đối chiếu</td></tr>
+<tr><td>Trên 10%</td><td>Kiểm tra riêng từng món, xem lại thủ kho và người nhận hàng</td></tr>
+</table>
+<p>Lệch 1–2% là bình thường, do hàng hư, hàng mất, hoặc đếm sai. Lệch từ 5% trở lên thì phải tìm nguyên nhân trước khi sửa sổ.</p>
+
+<table>
+<tr><th>Chỉ số</th><th>Số liệu</th></tr>
+<tr><td>Tổng số món kiểm</td><td></td></tr>
+<tr><td>Số món lệch</td><td></td></tr>
+<tr><td>Giá trị lệch</td><td></td></tr>
+<tr><td>Tỷ lệ lệch</td><td></td></tr>
+<tr><td>Nguyên nhân chính</td><td></td></tr>
+</table>
+<p>Người kiểm: ____________________ · Người đối chiếu: ____________________</p>
+
+<h2 id="hang-hoa">5. Theo dõi hàng bán chạy, bán chậm</h2>
+<p>Cập nhật mỗi tuần hoặc mỗi tháng một lần. Mục tiêu là biết món nào nên giữ nhiều hơn, món nào nên bỏ.</p>
+
+<h3>Hàng bán chạy</h3>
+<table>
+<tr><th>Mã hàng</th><th>Tên hàng</th><th>Tồn đầu kỳ</th><th>Đã bán</th><th>Tồn cuối kỳ</th><th>Tồn tối thiểu</th><th>Cần nhập thêm</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<p>Món tồn cuối kỳ thấp hơn tồn tối thiểu là món cần đặt hàng gấp. Đừng chờ đến khi hết hàng rồi mới gọi nhà cung cấp, mất vài ngày nghỉ bán.</p>
+
+<h3>Hàng bán chậm</h3>
+<table>
+<tr><th>Mã hàng</th><th>Tên hàng</th><th>Tồn hiện tại</th><th>Đã bán 3 tháng</th><th>Số tháng còn bán được</th><th>Ghi chú</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<p>Hàng đứng yên hơn 3 tháng thì nên giảm tồn hoặc chuyển sang bán kèm. Tồn cứ nằm trong kho vừa mất tiền vốn, vừa chiếm chỗ, vừa khó đếm khi kiểm kê.</p>
+
+<h3>Món nên bán kèm</h3>
+<table>
+<tr><th>Món chính</th><th>Món nên nhắc kèm</th><th>Lý do</th></tr>
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+</table>
+
+<h3>Bốn cách giảm thất thoát tại quầy</h3>
+<p>Một nửa thiệt hại không đến từ trộm cắp mà đến từ bán nhầm, quên ghi, hoặc đưa nhầm hàng cho khách. Bốn việc sau chặn được phần lớn.</p>
+<ul class="ck">
+<li>Mã vạch dán đúng hàng, quét một lần là ra đúng tên và giá</li>
+<li>Nhân viên đọc lại tên hàng trước khi báo giá cho khách</li>
+<li>Món giảm giá có thẻ riêng, không nhập chung giá thường</li>
+<li>Hàng bốc không mã vạch phải đếm tay rồi nhập lại, có ghi tạm</li>
+</ul>
+
+<h2 id="cong-no">6. Đối chiếu công nợ nhà cung cấp</h2>
+<p>Kỳ đối chiếu: Tháng ___/______ · Người làm: ______________________</p>
+
+<table>
+<tr><th>Nhà cung cấp</th><th>Nợ đầu kỳ</th><th>Nhập trong kỳ</th><th>Đã trả</th><th>Còn nợ cuối kỳ</th><th>Hạn thanh toán</th></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<p>Chọn từng nhà cung cấp lớn, mở từng phiếu, đối chiếu với hóa đơn gốc. Đừng chỉ so tổng — tổng khớp mà chi tiết lệch là kiểu lệch khó phát hiện nhất.</p>
+
+<h3>Các kiểu chênh lệch hay gặp</h3>
+<table>
+<tr><th>Kiểu lệch</th><th>Cách xử lý</th></tr>
+<tr><td>Vì chiết khấu</td><td>Nhà cung cấp hứa chiết khấu cuối kỳ nhưng chưa ghi vào phiếu. Ghi rõ vào biên bản, quyết định kỳ sau.</td></tr>
+<tr><td>Vì hàng trả lại</td><td>Kiểm tra xem đã trả lại hàng chưa mà sổ vẫn ghi là đã nhận. Hay gặp với hàng hư, hàng vỡ.</td></tr>
+<tr><td>Vì nhập thiếu</td><td>Số trên phiếu nhiều hơn số nhận thực tế. Đếm lại xem có món nào thiếu trên kho.</td></tr>
+<tr><td>Vì trả gộp</td><td>Người trả gộp tiền cho cả tháng. Đối chiếu từng phiếu với biên bản thanh toán.</td></tr>
+</table>
+
+<h2 id="ban-giao">7. Biên bản bàn giao tiền</h2>
+<p>Dùng khi tiền mặt chuyển từ ca này sang ca kế tiếp. Có biên bản thì khi có chuyện, mở ra là biết ngay lỗi ở đâu. Không có thì hỏi ai cũng nói không biết.</p>
+<p>Ngày: ___/___/______ · Ca bàn giao: ______ → ______</p>
+
+<table>
+<tr><th>Nội dung</th><th>Số tiền</th></tr>
+<tr><td>Tiền két cuối ca trước</td><td></td></tr>
+<tr><td>Tiền thu trong ca</td><td></td></tr>
+<tr><td>Tiền chi trong ca</td><td></td></tr>
+<tr><th>Tổng bàn giao</th><td></td></tr>
+<tr><td>Số dư đầu ca sau</td><td></td></tr>
+</table>
+
+<table>
+<tr><th>Vai trò</th><th>Họ tên</th><th>Chữ ký</th><th>Giờ</th></tr>
+<tr><td>Người bàn giao</td><td></td><td></td><td></td></tr>
+<tr><td>Người nhận bàn giao</td><td></td><td></td><td></td></tr>
+<tr><td>Người chứng kiến (nếu có)</td><td></td><td></td><td></td></tr>
+</table>
+<p>Biên bản giữ lại ít nhất 6 tháng. Khi có khiếu nại về tiền, đây là thứ duy nhất giải quyết được chuyện ai đã nhận số tiền bao nhiêu và lúc nào.</p>
+
+<h2 id="nguyen-tac">8. Vài nguyên tắc dùng được ở mọi cửa hàng</h2>
+
+<h3>Tiền trong két vừa đủ xài trong ca</h3>
+<p>Giữ nhiều quá thì mỗi lần đếm mất thời gian, thất thoát nhỏ cũng khó thấy vì con số to che mất. Giữ ít quá thì thiếu tiền thối, khách phải chờ.</p>
+
+<h3>Đếm tiền hai người cùng kiểm</h3>
+<p>Một người đếm, một người ghi. Người ghi là người nhận bàn giao sau đó.</p>
+
+<h3>Mọi khoản thu trong ngày đều tính vào</h3>
+<p>Kể cả tiền gửi xe, tiền bán thêm món lẻ ngoài quầy. Gộp chung vào tiền két thì cuối ngày không biết mất thêm bao nhiêu.</p>
+
+<h3>Kiểm kê kho theo định kỳ, không đợi đến khi nghi ngờ</h3>
+<p>Lệch 1–2% là chuyện bình thường do hàng hư, hàng mất, hàng đếm sai. Lệch 5% mà không xử lý thì đến cuối năm không biết lệch ở đâu.</p>
+
+<h2>Bài viết chi tiết</h2>
+<p>Mấy mẫu trên là bản tóm tắt để in. Cách làm chi tiết từng phần nằm ở các bài sau:</p>
+<ul>
+<li><a href="https://www.cachquanlybanhang.com/blog/mo-ca-ban-hang-buoi-sang/">Hướng dẫn mở ca bán hàng buổi sáng</a></li>
+<li><a href="https://www.cachquanlybanhang.com/blog/dong-ca-doi-soat-tien-cuoi-ngay/">Đóng ca và đối soát tiền cuối ngày</a></li>
+<li><a href="https://www.cachquanlybanhang.com/blog/quy-tien-mat-giu-bao-nhieu-la-du/">Quỹ tiền mặt nên giữ bao nhiêu cho mỗi ca</a></li>
+<li><a href="https://www.cachquanlybanhang.com/blog/kiem-ke-kho-dinh-ky-khong-lech/">Kiểm kê kho định kỳ không bị lệch</a></li>
+<li><a href="https://www.cachquanlybanhang.com/blog/chong-that-thoat-hang-hoa-quay-ban/">Chống thất thoát hàng hóa tại quầy bán</a></li>
+<li><a href="https://www.cachquanlybanhang.com/blog/doi-chieu-cong-no-nha-cung-cap/">Đối chiếu công nợ nhà cung cấp</a></li>
+</ul>
+
+<p>Bộ file gốc để tải về sửa theo cửa hàng của bạn: <a href="https://github.com/hakiet/mau-quan-ly-cua-hang">github.com/hakiet/mau-quan-ly-cua-hang</a>.</p>
+
+<footer>
+Bản mẫu do EBIZ POS tổng hợp từ kinh nghiệm quản lý quầy bán lẻ, miễn phí để dùng và sửa. Giấy phép MIT.
+</footer>
+
+</main>
+</body>
+</html>

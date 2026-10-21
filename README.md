@@ -41,7 +41,7 @@ Script chạy được bằng Node.js 18 trở lên, không cài dependency nào
 
 **Kiểm kê kho theo định kỳ, không đợi đến khi nghi ngờ.** Lệch nhỏ là chuyện bình thường do hàng hư, hàng mất, hàng đếm sai. Lệch lớn mà không xử lý thì đến cuối năm không biết lệch ở đâu.
 
-Chi tiết về cách mở ca buổi sáng và đối chiếu két có bài chi tiết hơn ở [Chuẩn bị mở cửa mỗi sáng cần làm gì?](https://www.biz-vn.com/blog/chung/chuan-bi-mo-cua-moi-sang/). Phần đóng ca và ghi biên bản bàn giao nằm ở [Đối chiếu tiền hàng với tiền mặt cuối ngày thế nào cho khớp?](https://www.biz-vn.com/blog/chung/doi-chieu-tien-hang-va-tien-mat-cuoi-ngay/).
+Chi tiết về cách mở ca buổi sáng và đối chiếu két có bài chi tiết hơn ở [Chuẩn bị mở cửa mỗi sáng cần làm gì?](https://www.biz-vn.com/blog/chung/chuan-bi-mo-cua-moi-sang/). Phần đóng ca và ghi biên bản bàn giao nằm ở [Thiết lập quầy thu ngân chuẩn cho cửa hàng từ đâu?](https://www.biz-vn.com/blog/cua-hang/thiet-lap-quay-thu-ngan-dung-chuan/).
 
 Cách tính quỹ tiền mặt để đủ xài mà không chôn vốn được giải thích kỹ hơn ở [Đối chiếu tiền hàng với tiền mặt cuối ngày thế nào cho khớp?](https://www.biz-vn.com/blog/chung/doi-chieu-tien-hang-va-tien-mat-cuoi-ngay/).
 

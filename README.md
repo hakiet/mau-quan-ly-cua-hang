@@ -58,7 +58,7 @@ Xem tại https://www.biz-vn.com/tai-lieu/
 
 ## Nếu muốn dùng phần mềm
 
-Nếu cửa hàng nhiều quầy, nhiều ca hoặc cần xem doanh số từ xa, mấy file Markdown này sẽ không đủ. Khi đó dùng [phần mềm quản lý bán hàng Ebusiness](https://www.biz-vn.com/tinh-nang/) — chạy trên máy cửa hàng, mất mạng vẫn ghi đơn và trừ kho được, có mạng thì chủ xem doanh số trên điện thoại. Chi tiết cách chọn phần mềm cho nhiều quầy có ở [Phần mềm bán hàng cho nhiều chi nhánh chọn thế nào?](https://www.biz-vn.com/blog/cao-cap/phan-mem-ban-hang-cho-nhieu-chi-nhanh/).
+Nếu cửa hàng nhiều quầy, nhiều ca hoặc cần xem doanh số từ xa, mấy file Markdown này sẽ không đủ. Khi đó dùng [Tính năng phần mềm quản lý bán hàng Ebusiness](https://www.biz-vn.com/tinh-nang/) — chạy trên máy cửa hàng, mất mạng vẫn ghi đơn và trừ kho được, có mạng thì chủ xem doanh số trên điện thoại. Chi tiết cách chọn phần mềm cho nhiều quầy có ở [Phần mềm bán hàng cho nhiều chi nhánh chọn thế nào?](https://www.biz-vn.com/blog/cao-cap/phan-mem-ban-hang-cho-nhieu-chi-nhanh/).
 
 ## Muốn đóng góp
 

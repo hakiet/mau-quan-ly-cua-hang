@@ -111,7 +111,7 @@
 <tr><td>Số dư cuối ca trên phần mềm</td><td></td></tr>
 <tr><td>Chênh lệch (két − phần mềm)</td><td></td></tr>
 </table>
-<p>Lệch dưới 50.000 đ: xử lý ngay tại quầy, ghi vào biên bản. Lệch lớn hơn: đếm lại toàn bộ lần hai rồi mở từng hóa đơn trong ngày đối chiếu.</p>
+<p>Lệch trong mức mà cửa hàng chấp nhận: xử lý ngay tại quầy, ghi vào biên bản. Lệch vượt mức đó: đếm lại toàn bộ lần hai rồi mở từng hóa đơn trong ngày đối chiếu.</p>
 
 <h3>Các khoản thu ngoài két</h3>
 <ul class="ck">
@@ -145,30 +145,30 @@
 <p>Lấy trung bình của tuần trước làm mốc. Ngày nào đông gấp đôi thì tính riêng, đừng lấy một mức cho cả tuần.</p>
 
 <h3>Bước 2: Tính tiền thối cần có</h3>
-<p>Công thức: <strong>doanh thu ca ÷ tỷ lệ thối</strong>. Tỷ lệ thối là số đồng bán ra trên mỗi đồng tiền thối cần có. Cửa hàng bán lẻ nhỏ thường rơi vào khoảng 1:3 đến 1:5. Muốn biết tỷ lệ của mình thì lấy một ca bình thường ra đếm: đầu ca có bao nhiêu tiền, cuối ca còn bao nhiêu tiền lẻ.</p>
+<p>Công thức: <strong>doanh thu ca ÷ tỷ lệ thối</strong>. Tỷ lệ thối là số đồng bán ra trên mỗi đồng tiền thối cần có. Mỗi cửa hàng một tỷ lệ khác nhau, nên phải tự đếm ra chứ không áp dùng con số của người khác. Cách đếm: lấy một ca bình thường, đầu ca có bao nhiêu tiền, cuối ca còn bao nhiêu tiền lẻ.</p>
 
 <table>
 <tr><th>Chỉ số</th><th>Số của cửa hàng bạn</th></tr>
 <tr><td>Doanh thu ca trung bình</td><td></td></tr>
 <tr><td>Tỷ lệ thối (1:___)</td><td></td></tr>
 <tr><td>Tiền thối cần có</td><td></td></tr>
-<tr><td>Dự phòng 20%</td><td></td></tr>
+<tr><td>Dự phòng thêm</td><td></td></tr>
 <tr><th>Tổng cần trong két</th><td></td></tr>
 </table>
 
 <h3>Bước 3: Chia theo mệnh giá</h3>
 <table>
 <tr><th>Mệnh giá</th><th>Số tờ tối thiểu</th><th>Thành tiền</th></tr>
-<tr><td>500.000</td><td>2</td><td></td></tr>
-<tr><td>200.000</td><td>3</td><td></td></tr>
-<tr><td>100.000</td><td>5</td><td></td></tr>
-<tr><td>50.000</td><td>20</td><td></td></tr>
-<tr><td>20.000</td><td>30</td><td></td></tr>
-<tr><td>10.000</td><td>40</td><td></td></tr>
-<tr><td>5.000</td><td>20</td><td></td></tr>
+<tr><td>500.000</td><td></td><td></td></tr>
+<tr><td>200.000</td><td></td><td></td></tr>
+<tr><td>100.000</td><td></td><td></td></tr>
+<tr><td>50.000</td><td></td><td></td></tr>
+<tr><td>20.000</td><td></td><td></td></tr>
+<tr><td>10.000</td><td></td><td></td></tr>
+<tr><td>5.000</td><td></td><td></td></tr>
 <tr><th>Tổng</th><td></td><td></td></tr>
 </table>
-<p>Mệnh giá cần nhiều nhất là 10.000, 20.000 và 50.000, vì khách hay đưa tờ 500.000 và 200.000.</p>
+<p>Chuẩn bị sẵn nhiều tờ mệnh giá nhỏ hơn, vì khách hay đưa tờ lớn và cần tiền lẻ. Số tờ tối thiểu thì tự chọn, rồi kiểm lại mỗi quý cho khớp với mức quỹ chuẩn.</p>
 
 <h3>Bước 4: Kiểm lại mỗi quý</h3>
 <p>Doanh thu thay đổi thì mức quỹ cũng phải chỉnh. Mỗi quý lấy một tuần ra đếm lại, so với bảng cũ, sửa chỗ lệch.</p>
@@ -183,7 +183,7 @@
 <div class="box">
 <strong>Tính nhanh bằng máy</strong>
 <pre>node cong-cu/tinh-quy-tien.mjs --doanh-thu 8000000 --ti-le-thoi 3 --muc-chuan 2500000</pre>
-<p style="margin-bottom:0">Script nằm trong repo, chạy bằng Node.js 18 trở lên, không cài thêm gì.</p>
+<p style="margin-bottom:0">Script nằm trong repo, chạy bằng Node.js 18 trở lên, không cài thêm gì. Tỷ lệ dự phòng do chủ quầy tự quyết, script mặc định 20%, đổi bằng cờ <code>--du-phong</code>.</p>
 </div>
 
 <h2 id="kiem-ke">4. Phiếu kiểm kê kho</h2>
@@ -210,12 +210,12 @@
 <h3>Xử lý chênh lệch</h3>
 <table>
 <tr><th>Mức lệch</th><th>Cách xử lý</th></tr>
-<tr><td>Dưới 2%</td><td>Ghi vào sổ, chỉnh số tồn, không cần báo</td></tr>
-<tr><td>2% đến 5%</td><td>Ghi vào sổ, tìm xem có món nào bị bỏ sót</td></tr>
-<tr><td>Trên 5%</td><td>Dừng lại, đếm lại lần hai, mở phiếu nhập xuất ra đối chiếu</td></tr>
-<tr><td>Trên 10%</td><td>Kiểm tra riêng từng món, xem lại thủ kho và người nhận hàng</td></tr>
+<tr><td>Lệch nhỏ, vài món</td><td>Ghi vào sổ, chỉnh số tồn, không cần báo</td></tr>
+<tr><td>Lệch vừa, nhiều món</td><td>Ghi vào sổ, tìm xem có món nào bị bỏ sót</td></tr>
+<tr><td>Lệch lớn, số tiền đáng kể</td><td>Dừng lại, đếm lại lần hai, mở phiếu nhập xuất ra đối chiếu</td></tr>
+<tr><td>Lệch rất lớn, tổng tiền lớn</td><td>Kiểm tra riêng từng món, xem lại thủ kho và người nhận hàng</td></tr>
 </table>
-<p>Lệch 1–2% là bình thường, do hàng hư, hàng mất, hoặc đếm sai. Lệch từ 5% trở lên thì phải tìm nguyên nhân trước khi sửa sổ.</p>
+<p>Lệch nhỏ thường do hàng hư, hàng mất, hoặc đếm sai. Lệch lớn thì phải tìm nguyên nhân trước khi sửa sổ.</p>
 
 <table>
 <tr><th>Chỉ số</th><th>Số liệu</th></tr>
@@ -255,12 +255,12 @@
 </table>
 
 <h3>Bốn cách giảm thất thoát tại quầy</h3>
-<p>Một nửa thiệt hại không đến từ trộm cắp mà đến từ bán nhầm, quên ghi, hoặc đưa nhầm hàng cho khách. Bốn việc sau chặn được phần lớn.</p>
+<p>Thiệt hại ở quầy thường không đến từ trộm cắp mà đến từ bán nhầm, quên ghi, hoặc đưa nhầm hàng cho khách. Bốn việc sau xử lý từng lỗi đó.</p>
 <ul class="ck">
 <li>Mã vạch dán đúng hàng, quét một lần là ra đúng tên và giá</li>
 <li>Nhân viên đọc lại tên hàng trước khi báo giá cho khách</li>
 <li>Món giảm giá có thẻ riêng, không nhập chung giá thường</li>
-<li>Hàng bốc không mã vạch phải đếm tay rồi nhập lại, có ghi tạm</li>
+<li>Hàng bốc không mã vạch phải đếm tay rồi nhập lại, có ghi chép tạm</li>
 </ul>
 
 <h2 id="cong-no">6. Đối chiếu công nợ nhà cung cấp</h2>
@@ -317,53 +317,49 @@
 <p>Kể cả tiền gửi xe, tiền bán thêm món lẻ ngoài quầy. Gộp chung vào tiền két thì cuối ngày không biết mất thêm bao nhiêu.</p>
 
 <h3>Kiểm kê kho theo định kỳ, không đợi đến khi nghi ngờ</h3>
-<p>Lệch 1–2% là chuyện bình thường do hàng hư, hàng mất, hàng đếm sai. Lệch 5% mà không xử lý thì đến cuối năm không biết lệch ở đâu.</p>
+<p>Lệch nhỏ là chuyện bình thường do hàng hư, hàng mất, hàng đếm sai. Lệch lớn mà không xử lý thì đến cuối năm không biết lệch ở đâu.</p>
 
 <h2>Bài viết chi tiết</h2>
 <p>Mấy mẫu trên là bản tóm tắt để in. Cách làm chi tiết từng phần nằm ở các bài sau:</p>
 <ul>
-<li><a href="https://www.cachquanlybanhang.com/blog/mo-ca-ban-hang-buoi-sang/">Hướng dẫn mở ca bán hàng buổi sáng</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/dong-ca-doi-soat-tien-cuoi-ngay/">Đóng ca và đối soát tiền cuối ngày</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/quy-tien-mat-giu-bao-nhieu-la-du/">Quỹ tiền mặt nên giữ bao nhiêu cho mỗi ca</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/kiem-ke-kho-dinh-ky-khong-lech/">Kiểm kê kho định kỳ không bị lệch</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/chong-that-thoat-hang-hoa-quay-ban/">Chống thất thoát hàng hóa tại quầy bán</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/doi-chieu-cong-no-nha-cung-cap/">Đối chiếu công nợ nhà cung cấp</a></li>
-<li><a href="https://www.cachquanlybanhang.com/kien-thuc/quan-ly-cong-no-cua-hang/">Quản lý công nợ cửa hàng nhỏ không thất thoát</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/kiem-tra-tien-gia-tai-quay/">Kiểm tra tiền giả tại quầy bán</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/thu-ngan-tinh-tien-thieu-xu-ly-sao/">Thu ngân tính tiền thiếu thì xử lý sao</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/chuyen-khoan-va-tien-mat-doi-soat-sao/">Đối soát chuyển khoản và tiền mặt</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/nhap-hang-moi-dung-quen-buoc-nay/">Nhập hàng mới đừng quên bước này</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/theo-doi-hang-ban-chay-hang-cham/">Theo dõi hàng bán chạy, hàng chậm</a></li>
-<li><a href="https://www.cachquanlybanhang.com/blog/nhap-hang-nhieu-chi-nhanh-ma-loi/">Nhập hàng nhiều chi nhánh mà không lỗi</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/chuan-bi-mo-cua-moi-sang/">Chuẩn bị mở cửa mỗi sáng cần làm gì?</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/doi-chieu-tien-hang-va-tien-mat-cuoi-ngay/">Đối chiếu tiền hàng với tiền mặt cuối ngày thế nào cho khớp?</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/kiem-ke-kho/">Kiểm kê kho nhanh mà chuẩn làm sao?</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/quan-ly-ton-kho/">Quản lý tồn kho thế nào cho chuẩn?</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/quan-ly-cong-no-nha-cung-cap/">Quản lý công nợ nhà cung cấp sao cho không nhầm?</a></li>
+<li><a href="https://www.biz-vn.com/blog/cua-hang/quan-ly-cong-no-cua-hang/">Quản lý công nợ cửa hàng thế nào cho khỏi mất tiền?</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/thao-tac-ghi-don/">Thao tác ghi đơn nhanh như thế nào?</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/quan-ly-hang-nhap/">Quản lý hàng nhập cần lưu ý gì?</a></li>
+<li><a href="https://www.biz-vn.com/blog/chung/bao-cao-mat-hang/">Báo cáo mặt hàng bán chạy xem thế nào?</a></li>
 </ul>
 
 <h2>Đọc thêm cho từng phần</h2>
 
-<p>Nhân viên nghỉ việc mà bàn giao tiền thiếu hoặc không rõ, thì mất tiền ở chỗ không ai chịu trách nhiệm: <a href="https://www.cachquanlybanhang.com/blog/nghi-viec-ban-giao-tien-hang-day-du/">nhân viên nghỉ việc bàn giao tiền hàng thế nào cho đủ</a>.</p>
+<p>Nhân viên nghỉ việc mà bàn giao tiền thiếu hoặc không rõ, thì mất tiền ở chỗ không ai chịu trách nhiệm: <a href="https://www.biz-vn.com/blog/tap-hoa/ban-giao-tien-mat-cuoi-ngay-tap-hoa/">Bàn giao tiền mặt cuối ngày tiệm tạp hóa thế nào cho khớp?</a>.</p>
 
-<p>Tiền mặt lệch sổ thường do đếm sai hoặc ghi thiếu, xử lý thế nào để không thành mất tiền thật: <a href="https://www.cachquanlybanhang.com/blog/tien-mat-lech-so-xu-ly-sao/">tiền mặt lệch sổ xử lý sao cho rõ ràng dễ tra</a>.</p>
+<p>Tiền mặt lệch sổ thường do đếm sai hoặc ghi thiếu, xử lý thế nào để không thành mất tiền thật: <a href="https://www.biz-vn.com/blog/chung/doi-chieu-tien-hang-va-tien-mat-cuoi-ngay/">Đối chiếu tiền hàng với tiền mặt cuối ngày thế nào cho khớp?</a>.</p>
 
-<p>Kết ca bàn giao giữa hai ca nên ghi lại thành biên bản, không chỉ trao đổi miệng: <a href="https://www.cachquanlybanhang.com/blog/ket-ca-ban-giao-giua-hai-ca/">kết ca bàn giao giữa hai ca làm sao không sót</a>.</p>
+<p>Kết ca bàn giao giữa hai ca nên ghi lại thành biên bản, không chỉ trao đổi miệng: <a href="https://www.biz-vn.com/blog/tap-hoa/ban-giao-tien-mat-cuoi-ngay-tap-hoa/">Bàn giao tiền mặt cuối ngày tiệm tạp hóa thế nào cho khớp?</a>.</p>
 
-<p>Giờ cao điểm đông khách, cách tính tiền nhanh mà không nhầm đơn là phần hay bị bỏ sót: <a href="https://www.cachquanlybanhang.com/blog/tinh-tien-nhanh-gio-cao-diem/">tính tiền nhanh giờ cao điểm mà không nhầm giá</a>.</p>
+<p>Giờ cao điểm đông khách, cách tính tiền nhanh mà không nhầm đơn là phần hay bị bỏ sót: <a href="https://www.biz-vn.com/blog/chung/thao-tac-ghi-don/">Thao tác ghi đơn nhanh như thế nào?</a>.</p>
 
-<p>Thu ngân cần cách phân biệt tiền thật với tiền giả trong túi, không phải đợi đến khi giao tiền mới phát hiện: <a href="https://www.cachquanlybanhang.com/blog/tinh-tien-khong-nham-khi-dong-khach/">tính tiền không nhầm dù khách đông đúc thế nào</a>.</p>
+<p>Thu ngân cần cách phân biệt tiền thật với tiền giả trong túi, không phải đợi đến khi giao tiền mới phát hiện: <a href="https://www.biz-vn.com/blog/chung/nhan-thanh-toan-khong-tien-mat-cua-hang-nho/">Cửa hàng nhỏ nhận tiền không dùng tiền mặt từ đâu cho đỡ rối?</a>.</p>
 
-<p>Phòng mất điện ở quầy tính tiền thì vẫn bán hàng được, cách chuẩn bị trước: <a href="https://www.cachquanlybanhang.com/blog/luu-dien-du-phong-cho-quay-tinh-tien/">lưu điện dự phòng cho quầy tính tiền nên làm thế nào</a>.</p>
+<p>Phòng mất điện ở quầy tính tiền thì vẫn bán hàng được, cách chuẩn bị trước: <a href="https://www.biz-vn.com/blog/cua-hang/phan-mem-quan-ly-cua-hang/">Phần mềm quản lý cửa hàng là gì?</a>.</p>
 
-<p>Phần tiền mặt tại quầy, muốn giảm rủi ro thất thoát thì cần quy tắc cụ thể chứ không chỉ tin tưởng nhân viên: <a href="https://www.cachquanlybanhang.com/blog/chong-gian-lan-tien-bac-tai-quay/">chống gian lận tiền bạc ở quầy bán hàng nhỏ</a>.</p>
+<p>Phần tiền mặt tại quầy, muốn giảm rủi ro thất thoát thì cần quy tắc cụ thể chứ không chỉ tin tưởng nhân viên: <a href="https://www.biz-vn.com/blog/cua-hang/chong-mat-hang-trong-cua-hang/">Chống mất hàng trong cửa hàng bằng cách nào?</a>.</p>
 
-<p>Hàng nhập về mà thiếu, hư, hỏng thì kiểm tra lúc nào, để không phát hiện khi đã bán: <a href="https://www.cachquanlybanhang.com/blog/kiem-tra-hang-nhap-thieu-hu-hong/">kiểm tra hàng nhập thiếu hư hỏng cho chắc chắn</a>.</p>
+<p>Hàng nhập về mà thiếu, hư, hỏng thì kiểm tra lúc nào, để không phát hiện khi đã bán: <a href="https://www.biz-vn.com/blog/chung/quan-ly-hang-nhap/">Quản lý hàng nhập cần lưu ý gì?</a>.</p>
 
-<p>Hàng tồn lâu ngày chiếm chỗ và tiền, cách xử lý để không dồn hàng: <a href="https://www.cachquanlybanhang.com/blog/xu-ly-hang-ton-lau-ngay/">xử lý hàng tồn lâu ngày cho kho đỡ chôn vốn</a>.</p>
+<p>Hàng tồn lâu ngày chiếm chỗ và tiền, cách xử lý để không dồn hàng: <a href="https://www.biz-vn.com/blog/chung/quan-ly-ton-kho/">Quản lý tồn kho thế nào cho chuẩn?</a>.</p>
 
-<p>Trong kho nhiều hàng, sắp xếp kiểu gì thì nhân viên tìm nhanh mà không cần lục tung cả kho: <a href="https://www.cachquanlybanhang.com/blog/sap-xep-kho-gon-tim-hang-nhanh/">sắp xếp kho gọn gàng để tìm hàng nhanh hơn mỗi ngày</a>.</p>
+<p>Trong kho nhiều hàng, sắp xếp kiểu gì thì nhân viên tìm nhanh mà không cần lục tung cả kho: <a href="https://www.biz-vn.com/blog/cua-hang/quan-ly-ton-kho-cua-hang/">Quản lý tồn kho cửa hàng thế nào cho gọn?</a>.</p>
 
-<p>Theo dõi hàng bán chạy và hàng bán chậm bằng số thay vì bằng cảm tính, để biết món nào đang nuôi cửa hàng: <a href="https://www.cachquanlybanhang.com/blog/theo-doi-ban-chay-ban-cham-bang-so/">theo dõi bán chạy bán chậm bằng con số thật dễ</a>.</p>
+<p>Theo dõi hàng bán chạy và hàng bán chậm bằng số thay vì bằng cảm tính, để biết món nào đang nuôi cửa hàng: <a href="https://www.biz-vn.com/blog/chung/bao-cao-mat-hang/">Báo cáo mặt hàng bán chạy xem thế nào?</a>.</p>
 
-<p>Cuối tháng lệch kho thì xử lý theo thứ tự nào, để không dồn lỗi về cuối năm: <a href="https://www.cachquanlybanhang.com/blog/xu-ly-lech-kho-cuoi-thang/">xử lý lệch kho cuối tháng sao cho hết hẳn luôn</a>.</p>
+<p>Cuối tháng lệch kho thì xử lý theo thứ tự nào, để không dồn lỗi về cuối năm: <a href="https://www.biz-vn.com/blog/chung/kiem-ke-kho/">Kiểm kê kho nhanh mà chuẩn làm sao?</a>.</p>
 
-<p>Báo cáo tháng đọc thế nào thì ra quyết định, không phải chỉ để xem cho có: <a href="https://www.cachquanlybanhang.com/blog/bao-cao-thang-chu-cua-hang-can-biet/">báo cáo tháng chủ cửa hàng cần biết những gì</a>.</p>
+<p>Báo cáo tháng đọc thế nào thì ra quyết định, không phải chỉ để xem cho có: <a href="https://www.biz-vn.com/blog/chung/bao-cao-doanh-thu/">Báo cáo doanh thu xem thế nào cho đúng?</a>.</p>
 
 <p>Bộ file gốc để tải về sửa theo cửa hàng của bạn: <a href="https://github.com/hakiet/mau-quan-ly-cua-hang">github.com/hakiet/mau-quan-ly-cua-hang</a>.</p>
 <p>Muốn dùng bảng tính mở sẵn trên trình duyệt thay vì tải file: <a href="https://www.biz-vn.com/tai-lieu/">mẫu bảng tính miễn phí</a>. Bài hướng dẫn chi tiết theo từng ngành nằm ở <a href="https://www.biz-vn.com/blog/">blog Ebusiness</a>.</p>
@@ -927,7 +923,7 @@
 <p>Kiến thức vận hành cửa hàng gom theo chủ đề: <a href="https://www.cachquanlybanhang.com/kien-thuc/">Kiến thức quản lý bán hàng và vận hành cửa hàng</a>.</p>
 
 <footer>
-Bản mẫu do EBIZ POS tổng hợp từ kinh nghiệm quản lý quầy bán lẻ, miễn phí để dùng và sửa. Giấy phép MIT.
+Bản mẫu do Ebusiness tổng hợp từ kinh nghiệm quản lý quầy bán lẻ, miễn phí để dùng và sửa. Giấy phép MIT.
 </footer>
 
 </main>

@@ -29,16 +29,16 @@ Người kiểm: ______________________________
 
 ## Xử lý chênh lệch
 
-Lệch 1–2% là bình thường, do hàng hư, hàng mất, hoặc đếm sai. Không cần làm gì nếu đã ghi lại lý do.
+Lệch nhỏ thường do hàng hư, hàng mất, hoặc đếm sai. Đã ghi lý do vào sổ thì không cần làm gì thêm.
 
-Lệch từ 5% trở lên thì phải tìm nguyên nhân trước khi sửa sổ.
+Lệch lớn thì phải tìm nguyên nhân trước khi sửa sổ.
 
 | Mức lệch | Cách xử lý |
 | --- | --- |
-| Dưới 2% | Ghi vào sổ, chỉnh số tồn, không cần báo |
-| 2% đến 5% | Ghi vào sổ, tìm xem có món nào bị bỏ sót |
-| Trên 5% | Dừng lại, đếm lại lần hai, mở phiếu nhập xuất ra đối chiếu |
-| Trên 10% | Kiểm tra riêng từng món, xem lại thủ kho và người nhận hàng |
+| Lệch nhỏ, vài món | Ghi vào sổ, chỉnh số tồn, không cần báo |
+| Lệch vừa, nhiều món | Ghi vào sổ, tìm xem có món nào bị bỏ sót |
+| Lệch lớn, số tiền đáng kể | Dừng lại, đếm lại lần hai, mở phiếu nhập xuất ra đối chiếu |
+| Lệch rất lớn, tổng tiền lớn | Kiểm tra riêng từng món, xem lại thủ kho và người nhận hàng |
 
 ## Ghi lại kết quả
 

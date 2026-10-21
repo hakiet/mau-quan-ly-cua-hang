@@ -15,7 +15,7 @@ Cập nhật mỗi tuần hoặc mỗi tháng một lần. Mục tiêu là biế
 | | | | | | | |
 | | | | | | | |
 
-Món tồn cuối kỳ thấp hơn tồn tối thiểu là món cần đặt hàng gấp. Đừng chờ đến khi hết hàng rồi mới gọi nhà cung cấp, mất mất vài ngày nghỉn.
+Món tồn cuối kỳ thấp hơn tồn tối thiểu là món cần đặt hàng gấp. Đừng chờ đến khi hết hàng rồi mới gọi nhà cung cấp, mất vài ngày nghỉ bán.
 
 ## Theo dõi hàng bán chậm
 
@@ -42,14 +42,14 @@ Các cặp món hay đi cùng nhau. Món này bán được nhiều hơn khi nh�
 
 ## Bốn cách giảm thất thoát tại quầy
 
-Một nửa thiệt hại không đến từ trộm cắp mà đến từ bán nhầm, quên ghi, hoặc đưa nhầm hàng cho khách. Bốn việc sau đây chặn được phần lớn.
+Thiệt hại ở quầy thường không đến từ trộm cắp mà đến từ bán nhầm, quên ghi, hoặc đưa nhầm hàng cho khách. Bốn việc sau đây xử lý từng lỗi đó.
 
 - [ ] Mã vạch dán đúng hàng, quét một lần là ra đúng tên và giá
 - [ ] Nhân viên đọc lại tên hàng trước khi báo giá cho khách
 - [ ] Món giảm giá có thẻ riêng, không nhập chung giá thường
-- [ ] Hàng bốc không mã vạch phải đếm tay rồi nhập lại, có ghi tạm
+- [ ] Hàng bốc không mã vạch phải đếm tay rồi nhập lại, có ghi chép tạm
 
-Chi tiết cách xử lý khi khách trả giá khéo léo và mẹo chống thất thoát tại quầy nằm ở [chống thất thoát hàng hóa tại quầy bán](https://www.cachquanlybanhang.com/blog/chong-that-thoat-hang-hoa-quay-ban/).
+Chi tiết cách xử lý khi khách trả giá khéo léo và mẹo chống thất thoát tại quầy nằm ở [Chống mất hàng trong cửa hàng bằng cách nào?](https://www.biz-vn.com/blog/cua-hang/chong-mat-hang-trong-cua-hang/).
 
 ## Tổng kết kỳ
 

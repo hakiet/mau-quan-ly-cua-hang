@@ -62,4 +62,4 @@ Chọn từng nhà cung cấp lớn, mở từng phiếu, đối chiếu với h
 | Phần đã xử lý khớp | |
 | Phần còn lệch chưa xử lý | |
 
-Biên bản đối chiếu chi tiết hơn nằm ở [đối chiếu công nợ nhà cung cấp](https://www.cachquanlybanhang.com/blog/doi-chieu-cong-no-nha-cung-cap/).
+Biên bản đối chiếu chi tiết hơn nằm ở [Quản lý công nợ nhà cung cấp sao cho không nhầm?](https://www.biz-vn.com/blog/chung/quan-ly-cong-no-nha-cung-cap/).

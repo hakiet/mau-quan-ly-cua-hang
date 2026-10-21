@@ -32,9 +32,10 @@ Người đóng ca: ______________________________
 - [ ] Tổng tiền két: ______________ đ
 - [ ] Số dư cuối ca trên phần mềm: ______________ đ
 - [ ] Chênh lệch = két − phần mềm: ______________ đ
+- [ ] Mức lệch nhỏ cửa hàng chấp nhận: ______________ đ
 
-Nếu lệch dưới 50.000 đ: xử lý ngay tại quầy, ghi lại trong biên bản.
-Nếu lệch lớn hơn: đếm lại toàn bộ lần hai, rồi mở từng hóa đơn trong ngày đối chiếu.
+Lệch trong mức đã ghi ở trên: xử lý ngay tại quầy, ghi lại trong biên bản.
+Lệch vượt mức đó: đếm lại toàn bộ lần hai, rồi mở từng hóa đơn trong ngày đối chiếu.
 
 ## Các khoản thu ngoài két
 

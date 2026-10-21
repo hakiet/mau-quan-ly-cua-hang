@@ -21,14 +21,14 @@ Lấy trung bình của tuần trước làm mốc. Ngày nào đông gấp đô
 
 Công thức: **doanh thu ca ÷ tỷ lệ thối**
 
-Tỷ lệ thối là số đồng bán ra được trên mỗi đồng tiền thối cần có. Cửa hàng bán lẻ nhỏ thường rơi vào khoảng 1:3 đến 1:5. Tính bằng cách lấy một ca bình thường ra đếm: đầu ca có bao nhiêu tiền, cuối ca còn bao nhiêu tiền lẻ.
+Tỷ lệ thối là số đồng bán ra được trên mỗi đồng tiền thối cần có. Mỗi cửa hàng một tỷ lệ khác nhau, nên phải tự đếm ra chứ không áp dùng con số của người khác. Cách đếm: lấy một ca bình thường, đầu ca có bao nhiêu tiền, cuối ca còn bao nhiêu tiền lẻ.
 
 | Chỉ số | Số của cửa hàng bạn |
 | --- | --- |
 | Doanh thu ca trung bình | |
 | Tỷ lệ thối (1:___) | |
 | Tiền thối cần có | |
-| Dự phòng 20% | |
+| Dự phòng thêm | |
 | **Tổng cần trong két** | |
 
 Dùng script trong repo để tính nhanh:
@@ -37,19 +37,21 @@ Dùng script trong repo để tính nhanh:
 node cong-cu/tinh-quy-tien.mjs --doanh-thu 8000000 --ti-le-thoi 3 --muc-chuan 2500000
 ```
 
+Tỷ lệ dự phòng do chủ quầy tự quyết, script mặc định 20%, đổi bằng cờ `--du-phong`.
+
 ## Bước 3: Chia theo mệnh giá
 
-Mệnh giá cần nhiều nhất là 10.000, 20.000 và 50.000, vì khách hay đưa tờ 500.000 và 200.000.
+Chuẩn bị sẵn nhiều tờ mệnh giá nhỏ hơn, vì khách hay đưa tờ lớn và cần tiền lẻ. Số tờ tối thiểu thì tự chọn, rồi kiểm lại mỗi quý cho khớp với mức quỹ chuẩn.
 
 | Mệnh giá | Số tờ tối thiểu | Thành tiền |
 | --- | --- | --- |
-| 500.000 | 2 | |
-| 200.000 | 3 | |
-| 100.000 | 5 | |
-| 50.000 | 20 | |
-| 20.000 | 30 | |
-| 10.000 | 40 | |
-| 5.000 | 20 | |
+| 500.000 | | |
+| 200.000 | | |
+| 100.000 | | |
+| 50.000 | | |
+| 20.000 | | |
+| 10.000 | | |
+| 5.000 | | |
 | Tiền lẻ khác | | |
 | **Tổng** | | |
 

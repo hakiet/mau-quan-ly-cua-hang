@@ -39,11 +39,11 @@ Script chạy được bằng Node.js 18 trở lên, không cài dependency nào
 
 **Mọi khoản thu trong ngày đều tính vào.** Kể cả tiền gửi xe, tiền bán thêm món lẻ ngoài quầy. Gộp chung vào tiền két thì cuối ngày không biết mất thêm bao nhiêu.
 
-**Kiểm kê kho theo định kỳ, không đợi đến khi nghi ngờ.** Lệch 1–2% là chuyện bình thường do hàng hư, hàng mất, hàng đếm sai. Lệch 5% mà không xử lý thì đến cuối năm không biết lệch ở đâu.
+**Kiểm kê kho theo định kỳ, không đợi đến khi nghi ngờ.** Lệch nhỏ là chuyện bình thường do hàng hư, hàng mất, hàng đếm sai. Lệch lớn mà không xử lý thì đến cuối năm không biết lệch ở đâu.
 
-Chi tiết về cách mở ca buổi sáng và đối chiếu két có bài chi tiết hơn ở [hướng dẫn mở ca bán hàng buổi sáng](https://www.cachquanlybanhang.com/blog/mo-ca-ban-hang-buoi-sang/). Phần đóng ca và ghi biên bản bàn giao nằm ở [đóng ca đối soát tiền cuối ngày](https://www.cachquanlybanhang.com/blog/dong-ca-doi-soat-tien-cuoi-ngay/).
+Chi tiết về cách mở ca buổi sáng và đối chiếu két có bài chi tiết hơn ở [Chuẩn bị mở cửa mỗi sáng cần làm gì?](https://www.biz-vn.com/blog/chung/chuan-bi-mo-cua-moi-sang/). Phần đóng ca và ghi biên bản bàn giao nằm ở [Đối chiếu tiền hàng với tiền mặt cuối ngày thế nào cho khớp?](https://www.biz-vn.com/blog/chung/doi-chieu-tien-hang-va-tien-mat-cuoi-ngay/).
 
-Cách tính quỹ tiền mặt để đủ xài mà không chôn vốn được giải thích kỹ hơn ở [quỹ tiền mặt nên giữ bao nhiêu cho mỗi ca](https://www.cachquanlybanhang.com/blog/quy-tien-mat-giu-bao-nhieu-la-du/).
+Cách tính quỹ tiền mặt để đủ xài mà không chôn vốn được giải thích kỹ hơn ở [Đối chiếu tiền hàng với tiền mặt cuối ngày thế nào cho khớp?](https://www.biz-vn.com/blog/chung/doi-chieu-tien-hang-va-tien-mat-cuoi-ngay/).
 
 ## Mẫu bảng tính tải thẳng
 
@@ -58,7 +58,7 @@ Xem tại https://www.biz-vn.com/tai-lieu/
 
 ## Nếu muốn dùng phần mềm
 
-Nếu cửa hàng nhiều quầy, nhiều ca hoặc cần xem doanh số từ xa, mấy file Markdown này sẽ không đủ. Khi đó dùng [EBIZ POS Offline](https://www.cachquanlybanhang.com/) — phần mềm bán hàng chạy trên máy cửa hàng, mất mạng vẫn tính tiền và trừ kho được, có mạng thì chủ xem doanh số trên điện thoại.
+Nếu cửa hàng nhiều quầy, nhiều ca hoặc cần xem doanh số từ xa, mấy file Markdown này sẽ không đủ. Khi đó dùng [phần mềm quản lý bán hàng Ebusiness](https://www.biz-vn.com/tinh-nang/) — chạy trên máy cửa hàng, mất mạng vẫn ghi đơn và trừ kho được, có mạng thì chủ xem doanh số trên điện thoại. Chi tiết cách chọn phần mềm cho nhiều quầy có ở [Phần mềm bán hàng cho nhiều chi nhánh chọn thế nào?](https://www.biz-vn.com/blog/cao-cap/phan-mem-ban-hang-cho-nhieu-chi-nhanh/).
 
 ## Muốn đóng góp
 

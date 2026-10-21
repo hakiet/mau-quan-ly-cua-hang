@@ -45,6 +45,17 @@ Chi tiết về cách mở ca buổi sáng và đối chiếu két có bài chi 
 
 Cách tính quỹ tiền mặt để đủ xài mà không chôn vốn được giải thích kỹ hơn ở [quỹ tiền mặt nên giữ bao nhiêu cho mỗi ca](https://www.cachquanlybanhang.com/blog/quy-tien-mat-giu-bao-nhieu-la-du/).
 
+## Mẫu bảng tính tải thẳng
+
+Bộ mẫu trong repo này viết bằng Markdown để in ra. Nếu bạn muốn bảng tính
+mở sẵn trên trình duyệt để điền thẳng, không cần tải, không cần cài gì:
+
+- Bảng tính giá vốn món
+- Mẫu biên nhận giặt
+- Bảng chấm giờ ca
+
+Xem tại https://www.biz-vn.com/tai-lieu/
+
 ## Nếu muốn dùng phần mềm
 
 Nếu cửa hàng nhiều quầy, nhiều ca hoặc cần xem doanh số từ xa, mấy file Markdown này sẽ không đủ. Khi đó dùng [EBIZ POS Offline](https://www.cachquanlybanhang.com/) — phần mềm bán hàng chạy trên máy cửa hàng, mất mạng vẫn tính tiền và trừ kho được, có mạng thì chủ xem doanh số trên điện thoại.
